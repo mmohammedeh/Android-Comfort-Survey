@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "512520005496",
+    "firebase_url": "https://matlab-surveyapp-default-rtdb.firebaseio.com",
+    "project_id": "matlab-surveyapp",
+    "storage_bucket": "matlab-surveyapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512520005496:android:aabf22e4b3a2bda8fa4a8d",
+        "android_client_info": {
+          "package_name": "com.gol.exoskeletonsurvey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512520005496-2aiia6v391stb7183tfh60ir8dmmef17.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gol.exoskeletonsurvey",
+            "certificate_hash": "0d04d39bb0a621b16a7737a8f48e6043bfcd3a45"
+          }
+        },
+        {
+          "client_id": "512520005496-baf6ovvmvs31u5igu19naej3hmcj1e18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEZcr4l1EhxCUIrxg6KPXthWVEhRbFBKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512520005496-baf6ovvmvs31u5igu19naej3hmcj1e18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gol.exoskeletonsurvey">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.TYPE_APPLICATION_OVERLAY" />
+    <!--
+ If your app targets Android 9 or lower, you can declare
+         ACCESS_COARSE_LOCATION instead.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:debuggable="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,HardcodedDebugMode">
+        <activity
+            android:name=".GoogleSignInActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".SurveyFeel"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SurveyVAS_1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SurveyVAS_2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SurveyLikertVAS_1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SurveyLikertVAS_2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BaseActivity" />
+        <activity
+            android:name="SplashPop"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.SplashPopTheme" />
+        <activity
+            android:name=".End"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>
