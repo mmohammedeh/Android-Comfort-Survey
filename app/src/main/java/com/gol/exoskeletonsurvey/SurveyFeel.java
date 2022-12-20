@@ -15,6 +15,9 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
 
+// This code is for the question about whether the subject felt an actual difference between trials.
+// If they answer yes, the code proceeds to a randomly picked question. If they answer no, then
+// the code will resubmit the last trial's answers to Firebase for the current trial.
 
 public class SurveyFeel extends BaseActivity {
 

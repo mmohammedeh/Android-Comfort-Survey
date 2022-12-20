@@ -42,6 +42,11 @@ import com.google.firebase.auth.GoogleAuthProvider;
 
 /**
  * Demonstrate Firebase Authentication using a Google ID Token.
+ * Most of this code is simply copy pasted from the Firebase documentation.
+ * This code checks to see if there is a user already logged in with a Google account. If not it
+ * will ask you to login with a Google account. Make sure that this Google account is allowed to
+ * read AND write to the Firebase database. Easiest way is to just make the account admin in the
+ * settings on the Firebase console.
  */
 public class GoogleSignInActivity extends BaseActivity implements
         View.OnClickListener {

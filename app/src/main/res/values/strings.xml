@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     <string name="app_name">Exoskeleton Survey</string>
     <string name="welcome">Welcome to the experiment survey</string>
-    <string name="splash_string">Please select school and input your subject ID.</string>
+    <string name="splash_string">Please input the subject ID.</string>
     <string name="yes_button">Yes</string>
     <string name="no_button">No</string>
     <string name="submit_button">Submit</string>
@@ -158,5 +158,6 @@
 
     <string name="error_sign_in_failed">Sign in failed, see logs for details.</string>
     <string name="multi_factor_signed_out">You are not signed in. To use this sample, first navigate to the Email/Password example to sign in and then return here to enroll in multi-factor auth.</string>
+    <string name="default_web_client_id">512520005496-2aiia6v391stb7183tfh60ir8dmmef17.apps.googleusercontent.com</string>
 
 </resources>
