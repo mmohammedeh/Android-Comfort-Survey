@@ -79,7 +79,6 @@ public class GoogleSignInActivity extends BaseActivity implements
         signOutAndDisconnect = findViewById(R.id.signOutAndDisconnect);
         status = findViewById(R.id.status);
         detail = findViewById(R.id.detail);
-
         // Button listeners
         signInButton.setOnClickListener(this);
         signOutButton.setOnClickListener(this);
