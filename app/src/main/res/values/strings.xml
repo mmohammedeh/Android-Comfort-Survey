@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     <string name="app_name">Exoskeleton Survey</string>
     <string name="welcome">Welcome to the experiment survey</string>
-    <string name="splash_string">Please select school and input your subject ID.</string>
+    <string name="splash_string">Please input the subject ID.</string>
     <string name="yes_button">Yes</string>
     <string name="no_button">No</string>
     <string name="submit_button">Submit</string>

@@ -17,11 +17,15 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
 
+// This code asks the user whether they entered the correct subject ID. This app was originally
+// intended to be used by both SMU and PSU. I recently changed the code so it is just PSU. After
+// the user submits the subject ID, the app will go to the first question.
+
 public class SplashPop extends BaseActivity {
 
     TextView popupText;
-    String schoolID;
     String subjectID_string;
+    String schoolID;
     HashMap<String, Object> dictionary;
     HashMap<Integer, Boolean> question_used1;
     HashMap<Integer, Boolean> question_used2;
@@ -35,6 +39,7 @@ public class SplashPop extends BaseActivity {
         setContentView(R.layout.splashpop);
         // Here I want the questions to appear randomly, so I made a dictionary with the status of
         // of the question, false means it hasn't been shown yet, and true means it has been shown.
+
         question_used1 = new HashMap<>();
         question_used2 = new HashMap<>();
         dictionary = new HashMap<>();
@@ -49,10 +54,10 @@ public class SplashPop extends BaseActivity {
         // activity so I retrieve the intent form the previous activity which will have variables
         // I need.
         Intent splash2popup = getIntent();
-        schoolID = splash2popup.getStringExtra("schoolID");
         subjectID_string = splash2popup.getStringExtra("subjectID");
+        schoolID = splash2popup.getStringExtra("schoolID");
         popupText = findViewById(R.id.popupTextView);
-        String popupString = "You selected " + schoolID + " and " + subjectID_string + " is this correct?";
+        String popupString = "You entered " + subjectID_string + "\n Is this correct?";
         popupText.setText(popupString);
 
         Button btYes = findViewById(R.id.yesButton);

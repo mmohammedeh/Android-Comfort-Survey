@@ -9,6 +9,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.HashMap;
 
+// The purpose of this activity is to figure out whether the survey should continue or quit out.
+
 public class End extends BaseActivity {
     Button exit;
     Button newSurvey;

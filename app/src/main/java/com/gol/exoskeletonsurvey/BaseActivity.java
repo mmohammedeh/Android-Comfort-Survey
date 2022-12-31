@@ -17,6 +17,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
+// This activity has functions that I did not want to put into the other files because they were
+// already getting pretty long.
+
 public abstract class BaseActivity extends  AppCompatActivity {
 
     private ProgressBar mProgressBar;

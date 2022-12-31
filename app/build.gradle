@@ -1,13 +1,17 @@
-apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
+plugins {
+    id 'com.android.application'
+
+    // Add the Google services Gradle plugin
+    id 'com.google.gms.google-services'
+
+}
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    compileSdkVersion 33
     defaultConfig {
         applicationId "com.gol.exoskeletonsurvey"
         minSdkVersion 28
-        targetSdkVersion 29
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -21,21 +25,21 @@ android {
     dataBinding {
         enabled = true
     }
+    namespace 'com.gol.exoskeletonsurvey'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation platform('com.google.firebase:firebase-bom:26.2.0')
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    // add SDKs for desired Firebase products
-    implementation 'com.google.firebase:firebase-database:19.6.0'
-    // firebase authentication
-    implementation 'com.firebaseui:firebase-ui-auth:6.2.0'
-    implementation 'com.google.firebase:firebase-auth:20.0.1'
-    implementation 'com.google.android.gms:play-services-auth:19.0.0'
-    implementation 'com.google.android.material:material:1.1.0'
-    testImplementation 'junit:junit:4.13.1'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.android.gms:play-services-auth:20.4.0'
+    implementation 'com.google.android.material:material:1.7.0'
 }
